@@ -1,0 +1,167 @@
+#search-view .search_bar{
+    background: #f4f4f4;
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    .search_bar_cont {
+        position: relative;
+        border-radius: 3px;
+        background: #fff;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-bottom: 8px;
+        padding-left: 35px;
+        -webkit-box-flex: 1;
+        .search_input {
+            height: 20px;
+            line-height: 20px;
+            width: 100%;
+            color: rgba(0,0,0,.3);
+            border: 0;
+            -webkit-appearance: textfield;
+            font-size: 14px;
+            outline:none;//去除点击时的边框
+            &:-webkit-autofill {
+                color: #ccc;
+            }
+            &:focus{
+                -webkit-box-shadow: 0 0 0 1000px white inset;
+            }
+        }
+        .icon_search {
+            position: absolute;
+            top: 9px;
+            left: 10px;
+            width: 18px;
+            height: 18px; 
+            background-image: url(../imgs/search.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-indent: -999px;
+        }
+        .icon_delete {
+            display: none;
+            position: absolute;
+            top: 9px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+            background: #b1b1b1;
+            text-indent: -9999px;
+            border-radius: 50%;
+            &:after, &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-radius: 8px;
+                background: #fff; 
+                -webkit-transform: rotate(45deg);   
+            }
+            &:before {
+                width: 10px;
+                height: 2px;
+                margin-left: -5px;
+                margin-top: -1px;
+            }
+            &:after{
+                width: 2px;
+                height: 10px;
+                margin-left: -1px;
+                margin-top: -5px;
+            }
+        }
+        
+        
+    }
+    .search_bar_tip_text {
+        display: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        height: 36px;
+        line-height: 36px;
+    }    
+}
+
+#search-view .search_result{
+    background: #fff;
+    padding: 15px 15px 10px 15px;
+    .result_tit {
+        color: rgba(0,0,0,.6);
+        margin-bottom: 8px;
+    }
+    .result_tags {
+        font-size: 0;
+    }
+    .tag_s {
+        display: inline-block;
+        font-size: 14px;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        color: #000;
+        border: 1px solid rgba(0,0,0,.6);
+        border-radius: 99px;
+        word-break: keep-all;
+        margin-bottom: 10px;
+        margin-right: 14px;
+    }
+    .tag_hot {
+        color: #fc4524;
+        border-color: #fc4524;
+    }
+}
+
+#search-view .search_result_song{
+    background: #fff;
+    .search_content{
+        position: relative;
+        height: 55px;
+        padding-left: 56px;
+        overflow: hidden;
+        .media {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 40px;
+            height: 40px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .icon{
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 22px;
+            height: 20px;
+            background-position: 0 0;
+            background-image: url(../imgs/search_sprite.png);
+            background-repeat: no-repeat;
+            background-size: 22px 30px;
+        }
+        .main_tit {
+            margin: 10px 0 2px;
+            line-height: 18px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+        }
+        .sub_tit {
+            color: #808080;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #e5e5e5;
+        }
+    }
+}

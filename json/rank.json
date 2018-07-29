@@ -1,0 +1,304 @@
+{
+    "code": 0,
+    "subcode": 0,
+    "message": "",
+    "default": 0,
+    "data": {
+        "topList": [
+            {
+                "id": 4,
+                "listenCount": 19100000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_214360296.jpg",
+                "songList": [
+                    {
+                        "singername": "王北车",
+                        "songname": "陷阱"
+                    },
+                    {
+                        "singername": "何流",
+                        "songname": "春花香"
+                    },
+                    {
+                        "singername": "沙娅",
+                        "songname": "悲爱"
+                    }
+                ],
+                "topTitle": "巅峰榜·流行指数",
+                "type": 0
+            },
+            {
+                "id": 26,
+                "listenCount": 20000000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_214003654.jpg",
+                "songList": [
+                    {
+                        "singername": "胡66",
+                        "songname": "浪人琵琶"
+                    },
+                    {
+                        "singername": "Olly Murs",
+                        "songname": "That Girl"
+                    },
+                    {
+                        "singername": "尤长靖",
+                        "songname": "傲红尘"
+                    }
+                ],
+                "topTitle": "巅峰榜·热歌",
+                "type": 0
+            },
+            {
+                "id": 27,
+                "listenCount": 14981580,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_214713358.jpg",
+                "songList": [
+                    {
+                        "singername": "冯提莫",
+                        "songname": "梦的游戏"
+                    },
+                    {
+                        "singername": "吴亦凡",
+                        "songname": "中国魂"
+                    },
+                    {
+                        "singername": "房东的猫",
+                        "songname": "云烟成雨"
+                    }
+                ],
+                "topTitle": "巅峰榜·新歌",
+                "type": 0
+            },
+            {
+                "id": 54,
+                "listenCount": 9300000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_54_300_214731557.jpg",
+                "songList": [
+                    {
+                        "singername": "蔡维泽",
+                        "songname": "视线所及只剩生活 (Live)"
+                    },
+                    {
+                        "singername": "邓典",
+                        "songname": "Perfect (Live)"
+                    },
+                    {
+                        "singername": "田燚",
+                        "songname": "我我 (Live)"
+                    }
+                ],
+                "topTitle": "巅峰榜·明日之子",
+                "type": 0
+            },
+            {
+                "id": 28,
+                "listenCount": 19300000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_28_300_214360296.jpg",
+                "songList": [
+                    {
+                        "singername": "王北车",
+                        "songname": "陷阱"
+                    },
+                    {
+                        "singername": "李袁杰",
+                        "songname": "醉千年"
+                    },
+                    {
+                        "singername": "贺敬轩",
+                        "songname": "但愿余生都是你"
+                    }
+                ],
+                "topTitle": "巅峰榜·网络歌曲",
+                "type": 0
+            },
+            {
+                "id": 5,
+                "listenCount": 4550840,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_214250426.jpg",
+                "songList": [
+                    {
+                        "singername": "周笔畅",
+                        "songname": "无人岛"
+                    },
+                    {
+                        "singername": "吴亦凡",
+                        "songname": "中国魂"
+                    },
+                    {
+                        "singername": "王菲",
+                        "songname": "偶遇"
+                    }
+                ],
+                "topTitle": "巅峰榜·内地",
+                "type": 0
+            },
+            {
+                "id": 6,
+                "listenCount": 3760520,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_214350724.jpg",
+                "songList": [
+                    {
+                        "singername": "许靖韵",
+                        "songname": "K歌之王"
+                    },
+                    {
+                        "singername": "罗大佑",
+                        "songname": "夜是秋月明"
+                    },
+                    {
+                        "singername": "尤长靖",
+                        "songname": "傲红尘"
+                    }
+                ],
+                "topTitle": "巅峰榜·港台",
+                "type": 0
+            },
+            {
+                "id": 3,
+                "listenCount": 10096450,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_3_300_214231566.jpg",
+                "songList": [
+                    {
+                        "singername": "Jason Mraz",
+                        "songname": "Might As Well Dance"
+                    },
+                    {
+                        "singername": "Niall Horan",
+                        "songname": "Finally Free"
+                    },
+                    {
+                        "singername": "Justin Timberlake",
+                        "songname": "SoulMate"
+                    }
+                ],
+                "topTitle": "巅峰榜·欧美",
+                "type": 0
+            },
+            {
+                "id": 16,
+                "listenCount": 6956020,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_16_300_214353733.jpg",
+                "songList": [
+                    {
+                        "singername": "TWICE (트와이스)",
+                        "songname": "Dance The Night Away"
+                    },
+                    {
+                        "singername": "구구단 세미나 (gugudan SEMINA)",
+                        "songname": "샘이나 (SEMINA)"
+                    },
+                    {
+                        "singername": "에이핑크 (Apink)",
+                        "songname": "1도 없어 (一点都没有)"
+                    }
+                ],
+                "topTitle": "巅峰榜·韩国",
+                "type": 0
+            },
+            {
+                "id": 29,
+                "listenCount": 5166220,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_29_300_204586755.jpg",
+                "songList": [
+                    {
+                        "singername": "房东的猫",
+                        "songname": "云烟成雨"
+                    },
+                    {
+                        "singername": "王菲",
+                        "songname": "偶遇"
+                    },
+                    {
+                        "singername": "鞠婧祎",
+                        "songname": "叹云兮"
+                    }
+                ],
+                "topTitle": "巅峰榜·影视金曲",
+                "type": 0
+            },
+            {
+                "id": 17,
+                "listenCount": 1910000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_17_300_214270266.jpg",
+                "songList": [
+                    {
+                        "singername": "SILENT SIREN (サイレント・サイレン)",
+                        "songname": "19 Summer Note."
+                    },
+                    {
+                        "singername": "w-inds.",
+                        "songname": "Temporary"
+                    },
+                    {
+                        "singername": "大塚愛 (おおつか あい)",
+                        "songname": "あっかん  べ (做鬼脸)"
+                    }
+                ],
+                "topTitle": "巅峰榜·日本",
+                "type": 0
+            },
+            {
+                "id": 201,
+                "listenCount": 308131,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/20150127163830.jpg",
+                "songList": [
+                    {
+                        "singername": "王鹤棣",
+                        "songname": "For You"
+                    },
+                    {
+                        "singername": "MAMAMOO",
+                        "songname": "너나 해"
+                    },
+                    {
+                        "singername": "阿里郎",
+                        "songname": "隔壁泰山"
+                    }
+                ],
+                "topTitle": "巅峰榜·MV",
+                "type": 0
+            },
+            {
+                "id": 52,
+                "listenCount": 1930000,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_52_300_214230214.jpg",
+                "songList": [
+                    {
+                        "singername": "牛奶咖啡",
+                        "songname": "胜利之光"
+                    },
+                    {
+                        "singername": "陶心瑶",
+                        "songname": "戒你"
+                    },
+                    {
+                        "singername": "左颜",
+                        "songname": "想要爱他"
+                    }
+                ],
+                "topTitle": "巅峰榜·腾讯音乐人原创榜",
+                "type": 0
+            },
+            {
+                "id": 36,
+                "listenCount": 3719660,
+                "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_36_300_200732009.jpg",
+                "songList": [
+                    {
+                        "singername": "刘霜",
+                        "songname": "曾经最美"
+                    },
+                    {
+                        "singername": "冯鑫",
+                        "songname": "成都"
+                    },
+                    {
+                        "singername": "胡慧",
+                        "songname": "分手快乐"
+                    }
+                ],
+                "topTitle": "巅峰榜·K歌金曲",
+                "type": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+#rec-view .radios, #rec-view .playlists{
+    margin: 14px 10px 10px;
+
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .title{
+        color: #000;
+        font-size: 16px;
+        margin-bottom: 11px;
+        line-height: 24px;
+    }
+    .list{
+        margin-right: -8px;
+        .list-item{
+            float: left;
+            width: 50%;
+            padding-right: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            font-size: 14px;
+            .list-main{
+                display: block;
+                background: #fff;
+            }
+            .list-media{
+                position: relative;
+                margin-bottom: 5px;
+                &:before{
+                    content: "";
+                    display: block;
+                    padding-top: 100%;/*这个不加没加载图片时候父容器会塌陷，高度为0，padding-top撑高度*/
+                }
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                z-index: 1;
+            }    
+            .icon{
+                background-image: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423);
+                background-repeat: no-repeat;
+                background-size: 24px 60px;
+            }
+            .list-info{
+                padding: 0 7px 5px;
+                color: #000;
+                > h3 {
+                    height: 36px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    white-space: normal;
+                    word-wrap: break-word;
+                }
+            }
+            .icon-play{  
+                position: absolute;                   
+                height: 24px;
+                bottom: 5px;
+                right: 5px;
+                width: 24px;    
+                z-index: 2;
+                background-position: 0 0;
+            }
+        }
+        
+    }
+}
+.mod-footer{
+    padding: 15px 0;
+    margin-bottom: 15px;
+    .version-tab {
+        text-align: center;
+        margin-bottom: 16px;
+        > a{
+            position: relative;
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 14px;
+            height: 14px;
+            line-height: 14px;
+            color: #000;            
+        }
+    }
+    .footer-logo {
+        display: block;
+        width: 82px;
+        height: 24px;
+        margin: 0 auto 10px;
+        background-image: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/logo_footer.png?max_age=19830212&d=20151105145423);
+        background-repeat: no-repeat;        background-size: cover;
+        text-indent: -9999px;
+    }
+    .copyright {
+        font-size: 10px;
+        text-align: center;
+        color: rgba(0,0,0,.5);
+    }
+    .list-more{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 15px;
+        > a{
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,.6);
+        }
+    }
+}

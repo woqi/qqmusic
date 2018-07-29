@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <title>QQ Music</title>
+</head>
+<body>
+    <header id="header">
+        <img src="imgs/logo.png" alt="logo" id="logo">
+        <span class="download">下载APP</span>   
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+        <li class="nav-item" data-role="tab" data-view="#rec-view">推荐</li>
+        <li class="nav-item" data-role="tab" data-view="#rank-view">排行榜</li>
+        <li class="nav-item" data-role="tab" data-view="#search-view">搜索</li>
+    </nav>
+    <div class="views">
+        <div id="rec-view" class="tab-content hide">
+            <div class="qq-slider" id="slider">
+            </div>
+            <div class="radios">
+                <h2 class="title">电台</h2>
+                <ul class="list"></ul>
+                
+            </div>   
+
+            <div class="playlists">
+                <h2 class="title">热门歌单</h2>
+                <ul class="list"></ul>
+            </div> 
+            <div class="mod-footer">
+                    <p class="list-more"><a href="">去客户端发现更多好音乐 &gt;</a></p>
+                <div class="version-tab">
+                    <a href="http://y.qq.com/?ADTAG=myqq&amp;nomobile=1#type=index">查看电脑版网页</a>
+                </div>
+                <div class="footer-logo">QQ音乐</div>
+                <p class="copyright">Copyright © 1998 - <span>2018</span> Tencent. All Rights Reserved.</p>
+                <p class="copyright">联系电话：0755-86013388 QQ群：55209235</p>
+            </div>
+        </div>
+        <div id="rank-view" class="tab-content hide">
+            <div class="toplist-wrap">
+                <ul class="topic">
+                </ul>
+            </div>
+        </div>
+        <div id = "search-view" class="tab-content">
+            <div class="search_bar">
+                <div class="search_bar_cont">
+                    <form method="get">
+                        <input id = "search" class="search_input" type="text" autocomplete="off" autocorrect="off" placeholder="搜索歌曲、歌单、专辑">
+                        <!-- autocomplete="off" autocorrect="off" -->
+                        <span class="icon_search">搜索</span>
+                        <span class="icon_delete">删除</span>
+                    </form>
+                </div>
+                <div class="search_bar_tip_text">取消</div>
+            </div>
+            <!-- <div class="search_result">
+                <h3 class="result_tit">热门搜索</h3>
+                <div class="result_tags">
+                    <a href="" class="tag_s tag_hot">易烊千玺</a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">THE WRONG THINGS </a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">儿歌 </a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">MOVE YOUR BODY </a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">二郎我已经爱上了你 </a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">一个人的夜我的心 </a>
+                    
+                    
+                    <a href="" class="js_keyword tag_s">我已经爱上你二郎 </a>
+                    
+                </div>
+            </div> -->
+            <div class="search_result_song">
+                <ul class="search_song_list">
+                    <!-- <li class="search_content" data-albummid="zzz">
+                        <span class="media cover"><img src="https://y.gtimg.cn/music/photo_new/T002R68x68M000003UuQyK2HqVcg.jpg?max_age=2592000" alt="The Wrong Things"></span>
+                        <h6 class="main_tit">The Wrong Things</h6>
+                        <p class="sub_tit">王源</p>
+                    </li>  -->
+                    <!-- <li class="search_content">
+                        <i class="icon "></i>
+                        <h6 class="main_tit">${song.songname}</h6>                   
+                        <p class="sub_tit">${song.singer.map(s => s.name).join(' ')}</p>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="scripts/search.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/tab.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

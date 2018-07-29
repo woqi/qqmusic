@@ -1,0 +1,27 @@
+{
+  "name": "qqmusic",
+  "version": "1.0.0",
+  "description": "qq音乐模拟",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass -wro css scss/&anywhere 7895"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woqi/qqmusic.git"
+  },
+  "keywords": [],
+  "author": "woqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woqi/qqmusic/issues"
+  },
+  "homepage": "https://github.com/woqi/qqmusic#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
