@@ -1,6 +1,6 @@
 (function(){
 
-    fetch('http://localhost:4000/')
+    fetch('/json/rec.json')
     //https://qq-music-api.now.sh
     ///json/rec.json
     .then(res => res.json())
