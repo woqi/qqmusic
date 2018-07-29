@@ -14,7 +14,7 @@ class Search{
         let keyword = event.target.value.trim()
         if(!keyword) return this.reset()
         //if(event.key !== '/') return
-        if (event.keyCode == 13) return
+        if (event.keyCode !== 13) return
         //return false;
         this.search(keyword)
         //event.preventDefault();
