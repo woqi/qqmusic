@@ -12,9 +12,9 @@ class Search{
 
     onKeyUp(event){
         let keyword = event.target.value.trim()
-        if(!keyword) return this.reset()
-        if(event.key !== 'Enter') return
-        //if (event.keyCode !== 13) return
+        //if(!keyword) return this.reset()
+        //if(event.key !== 'Enter') return
+        if (event.keyCode !== 13) return
         this.search(keyword)
         //event.preventDefault();
         console.log(keyword)
