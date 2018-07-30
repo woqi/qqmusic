@@ -1,12 +1,12 @@
 (function(){
 
-    fetch('/json/rec.json')
+    fetch('json/rec.json')
     //https://qq-music-api.now.sh
     ///json/rec.json
     .then(res => res.json())
     .then(render)
 
-    fetch('/json/rank.json')
+    fetch('json/rank.json')
     .then(res => res.json())
     .then(json => json.data.topList)
     .then(renderTopLists)
