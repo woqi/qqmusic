@@ -10,7 +10,7 @@
 <body>
     <header id="header">
         <img src="imgs/logo.png" alt="logo" id="logo">
-        <span class="download">下载APP</span>   
+        <span class="player">播放器</span> 
     </header>
     <nav class="navbar">
         <ul class="nav-list">
@@ -51,19 +51,19 @@
         <div id = "search-view" class="tab-content">
             <div class="search_bar">
                 <div class="search_bar_cont">
-                    <form method="get">
-                        <input id = "search" class="search_input" type="text" autocomplete="off" autocorrect="off" placeholder="搜索歌曲、歌单、专辑">
-                        <!-- autocomplete="off" autocorrect="off" -->
-                        <span class="icon_search">搜索</span>
-                        <span class="icon_delete">删除</span>
-                    </form>
+                    
+                    <input id = "search" class="search_input" type="text" autocomplete="off" autocorrect="off" placeholder="搜索歌曲、歌单、专辑">
+                    <!-- autocomplete="off" autocorrect="off" -->
+                    <span class="icon_search">搜索</span>
+                    <span class="icon_delete">删除</span>
+                    
                 </div>
                 <div class="search_bar_tip_text">取消</div>
             </div>
-            <!-- <div class="search_result">
+            <div class="search_hot_keys">
                 <h3 class="result_tit">热门搜索</h3>
                 <div class="result_tags">
-                    <a href="" class="tag_s tag_hot">易烊千玺</a>
+                    <!-- <a href="" class="tag_s tag_hot">易烊千玺</a>
                     
                     
                     <a href="" class="js_keyword tag_s">THE WRONG THINGS </a>
@@ -81,10 +81,10 @@
                     <a href="" class="js_keyword tag_s">一个人的夜我的心 </a>
                     
                     
-                    <a href="" class="js_keyword tag_s">我已经爱上你二郎 </a>
+                    <a href="" class="js_keyword tag_s">我已经爱上你二郎 </a> -->
                     
                 </div>
-            </div> -->
+            </div>
             <div class="search_result_song">
                 <ul class="search_song_list">
                     <!-- <li class="search_content" data-albummid="zzz">
@@ -92,17 +92,47 @@
                         <h6 class="main_tit">The Wrong Things</h6>
                         <p class="sub_tit">王源</p>
                     </li>  -->
-                    <!-- <li class="search_content">
-                        <i class="icon "></i>
-                        <h6 class="main_tit">${song.songname}</h6>                   
-                        <p class="sub_tit">${song.singer.map(s => s.name).join(' ')}</p>
-                    </li> -->
                 </ul>
             </div>
+            <div class="search-loading">
+                <i class="loading-icon"></i>
+                <span class="loading-text">正在载入更多...</span>    
+            </div>
+            <p class="loading-done">已加载全部</p>
 
         </div>
     </div>
-    
+    <div id="player">
+        <div class="player-container">
+            <div class="player-header">
+                <img class="album-cover">
+                <div class="song-info">
+                    <div class="song-name ellipsis"></div>
+                    <div class="song-artist ellipsis"></div>
+                </div>
+                <span class="icon-action icon-play"></span>
+            </div>
+            <div class="player-lyrics"></div>
+            <div class="player-footer">
+                <div class="icon-list"></div>
+                <div class="progress">
+                    <!-- <div class="progress-time progress-elapsed">00:00</div>
+                        <div class="progress-bar">
+                        <div class="progress-bar-progress"></div>
+                        </div>
+                    <div class="progress-time progress-duration">00:00</div> -->
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn-download">下载这首歌</a>
+                </div>
+            </div>
+        </div>
+        <div class="player-background"></div>
+        
+    </div>
+    <script src="scripts/lyrics_players.js"></script>
+    <script src="scripts/music_play.js"></script>
+    <script src="scripts/progress_bar.js"></script>
     <script src="scripts/search.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/lazyload.js"></script>
