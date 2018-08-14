@@ -101,8 +101,8 @@
 
 //------------------------新老兼容
 
-function lazyload(images){
-    let imgs = [].slice.call(images)//转化为数组
+export function lazyload(images){
+    let imgs = [].slice.call(images || document.querySelectorAll('.lazyload'))//转化为数组
     if('IntersectionObserver' in window){
         let observer = new IntersectionObserver(function(entries){
             entries.forEach(entry => {

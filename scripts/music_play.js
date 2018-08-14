@@ -1,12 +1,16 @@
-class MusicPlayer{
+import {LyricsPlayer} from './lyrics_players.js'
+import {ProgressBar} from './progress_bar.js'
+import {lyricsUrl, albumCoverUrl} from './helpers.js'
+
+export class MusicPlayer{
     constructor(el){
         this.$el = el
         this.$el.addEventListener('click', this)
         this.$audio = this.createAudio()
 
         this.lyrics = new LyricsPlayer(this.$el.querySelector('.player-lyrics'),this.$audio)
-        console.log('this.lyrics')
         //console.log('this.lyrics')
+        //console.log(this.lyrics)
         this.progress = new ProgressBar(this.$el.querySelector('.progress'))
         this.fetching = false
         //测试new ProgressBar(this.$el.querySelector('.progress'), 280, ture)        
@@ -14,8 +18,9 @@ class MusicPlayer{
 
     createAudio(){
         let audio = document.createElement('audio')
-        audio.id =`player-${Math.floor(Math.random()*100)}-${+new Date()}`       
-        audio.addEventListener('ended',() => {
+        //audio.loop = true
+        audio.id =`player-${Math.floor(Math.random()*100)}-${+new Date()}`//时间戳id      
+        audio.addEventListener('ended',() => {//播完一次还可以从新播放
             this.$audio.play()
             this.lyrics.restart()
             this.progress.restart()
@@ -62,16 +67,19 @@ class MusicPlayer{
         this.$el.querySelector('.song-artist').innerText = options.artist
         this.progress.reset(options.duration)
 
-        let url = `https://y.gtimg.cn/music/photo_new/T002R150x150M000${options.albummid}.jpg`
+        let url = albumCoverUrl(options.albummid)
+        //`https://y.gtimg.cn/music/photo_new/T002R150x150M000${options.albummid}.jpg`
         this.$el.querySelector('.album-cover').src = url
         this.$el.querySelector('.player-background').style.backgroundImage = `url(${url})`
         if(options.songid){
             this.songid = options.songid
-            this.$audio.src = `http://ws.stream.qqmusic.qq.com/${this.songid}.m4a?fromtag=46`
+            this.$audio.src = `http://pb5h7no6c.bkt.clouddn.com/${this.songid}.mp3`
                              //http://pb5h7no6c.bkt.clouddn.com/${this.songid}.mp3
                              //http://ws.stream.qqmusic.qq.com/${this.songid}.m4a?fromtag=46
 
-            fetch('https://qq-music-api.now.sh/lyrics?id=${this.songid}')
+            fetch(lyricsUrl(this.songid))
+            //`https://qq-server-kfhdengskt.now.sh/lyrics?id=${this.songid}`
+            //https://qq-music-api.now.sh/lyrics
             .then(res => res.json())
             .then(json => json.lyric)
             .then(text => this.lyrics.reset(text))
@@ -84,10 +92,12 @@ class MusicPlayer{
 
     show(){
         this.$el.classList.add('show')
+        document.body.classList.add('noscroll')
     }
 
     hide(){
         this.$el.classList.remove('show')
+        document.body.classList.remove('noscroll')
     }
 
 }

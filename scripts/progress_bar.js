@@ -1,4 +1,4 @@
-class ProgressBar{
+export class ProgressBar{
     constructor(el,duration,start){
         this.$el = el
         this.duration = duration || 0//总的时间
