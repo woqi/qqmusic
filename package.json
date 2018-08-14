@@ -4,8 +4,9 @@
   "description": "qq音乐模拟",
   "main": "index.js",
   "scripts": {
-    "test": "node-sass -wro css scss/&anywhere 7895",
-    "start": "webpack --config webpack.config.js"
+    "test": "node-sass -wro css scss/ && anywhere 7895",
+    "start": "webpack --config webpack.config.js",
+    "compress":"webpack --config webpack.config.js -p"
     
   },
   "repository": {
