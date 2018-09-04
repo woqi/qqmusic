@@ -73,13 +73,16 @@ export class MusicPlayer{
         this.$el.querySelector('.player-background').style.backgroundImage = `url(${url})`
         if(options.songid){
             this.songid = options.songid
-            this.$audio.src = `http://pb5h7no6c.bkt.clouddn.com/${this.songid}.mp3`
+            this.songmid = options.songmid
+            //this.$audio.src = `http://pb5h7no6c.bkt.clouddn.com/${this.songid}.mp3`
+            this.$audio.src = `http://ws.stream.qqmusic.qq.com/C100${this.songmid}.m4a?fromtag=0&guid=126548448`
                              //http://pb5h7no6c.bkt.clouddn.com/${this.songid}.mp3
                              //http://ws.stream.qqmusic.qq.com/${this.songid}.m4a?fromtag=46
+                             //http://ws.stream.qqmusic.qq.com/C100${this.songmid}.m4a?fromtag=0&guid=126548448
 
             fetch(lyricsUrl(this.songid))
             //`https://qq-server-kfhdengskt.now.sh/lyrics?id=${this.songid}`
-            //https://qq-music-api.now.sh/lyrics
+            //https://qq-music-api.now.sh/lyrics           
             .then(res => res.json())
             .then(json => json.lyric)
             .then(text => this.lyrics.reset(text))
