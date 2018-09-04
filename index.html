@@ -125,7 +125,9 @@
         <div class="player-background"></div>
         
     </div>
-     <script type="module" src="scripts/app.js"></script>
-    <script nomodule src="dist/bundle.js"></script>
+     <!-- <script type="module" src="scripts/app.js"></script> -->
+    <script  src="dist/bundle.js"></script>
+    <!-- nomodule 如果连接app.js将该命令移到src="dist/bundle.js"前-->
+    <!-- 当浏览器不支持es6使用bundle.js（29条请求，加载时间53ms），支持使用app.js（35条请求，加载时间528ms） -->
 </body>
 </html>
